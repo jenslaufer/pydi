@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages, find_namespace_packages
 
-setup(name='rltrader',
+setup(name='pyri',
       version='0.1.0',
       author='Jens Laufer',
       author_email='jenslaufer@gmail.com',
