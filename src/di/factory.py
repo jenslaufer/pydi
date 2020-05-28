@@ -14,7 +14,7 @@ def create_object(d):
     for k, v in d.items():
         if isinstance(v, dict):
             # nestes objects
-            obj = get_objects(v)
+            obj = create_object(v)
             args[k] = obj
         else:
             if k == 'name':
