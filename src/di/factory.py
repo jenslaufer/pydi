@@ -6,7 +6,7 @@ import types
 
 logger = logging.getLogger(__name__)
 
-def get_objects(d):
+def create_object(d):
     args = {}
     module = ""
     funct = ""
@@ -49,7 +49,6 @@ def get_objects(d):
 
 
 class Factory:
-
     def __init__(self, target, args):
         self.module, self.funct = split_module_class(target)
         self.args = args
